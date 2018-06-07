@@ -3,6 +3,7 @@ import difflib
 from difflib import SequenceMatcher
 from difflib import get_close_matches
 
+data = json.load(open("data.json"))
 
 def definition2():
     w = input("Enter a word: ").lower()
