@@ -1,7 +1,6 @@
 def definition2():
     w = input("Enter a word: ").lower()
     try:
-        if w.title()
         return data[w]
     
     except KeyError:
