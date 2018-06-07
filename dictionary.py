@@ -1,3 +1,9 @@
+import json
+import difflib
+from difflib import SequenceMatcher
+from difflib import get_close_matches
+
+
 def definition2():
     w = input("Enter a word: ").lower()
     try:
