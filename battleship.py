@@ -29,6 +29,10 @@ def battleship():
                 print()
                 print("RUN OUT OF CHANCES")
                 break
+                
+            elif (guess_row == 99 or guess_col == 99):
+                print("BYE")
+                break
         
             elif (guess_row == ship_row and guess_col == ship_col):
                 print('RIGHT')
@@ -42,10 +46,7 @@ def battleship():
                 guess_row=int(input("Which row? "))
                 guess_col=int(input("Which column? "))
         
-            elif (guess_row == 99 or guess_col == 99):
-                print("BYE")
-                break
-  
+              
     print_board(board)
   
     guess()
